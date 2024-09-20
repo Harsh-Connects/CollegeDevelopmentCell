@@ -7,15 +7,20 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
         }
 
+        h2 {
+            margin-bottom: 20px;
+        }
+
         .circle {
             border-radius: 50%;
-            position: absolute;
+            position: relative;
         }
 
         .outer-circle {
@@ -28,18 +33,26 @@
             width: 150px;
             height: 150px;
             background-color: white;
+            position: absolute;
+            top: 25px;
+            left: 25px;
         }
 
         .inner-circle {
             width: 100px;
             height: 100px;
             background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
         }
     </style>
 </head>
 <body>
-    <div class="circle outer-circle"></div>
-    <div class="circle middle-circle"></div>
-    <div class="circle inner-circle"></div>
+    <h2>Concentric Circles</h2>
+    <div class="circle outer-circle">
+        <div class="circle middle-circle"></div>
+        <div class="circle inner-circle"></div>
+    </div>
 </body>
 </html>
