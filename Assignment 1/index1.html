@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Layout Template</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .tile {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 10px;
+            width: 200px; /* Fixed width for uniformity */
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .tile:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .tile img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0; /* Rounded corners on the top */
+        }
+
+        .tile h3 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .tile hr {
+            border: 1px solid #e0e0e0;
+            margin: 10px 0;
+        }
+
+        .tile p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 1">
+            <h3>Tile 1</h3>
+            <hr>
+            <p>I have used the sample image for the Tiles. Description for Tile 1.</p>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 2">
+            <h3>Tile 2</h3>
+            <hr>
+            <p>Description for Tile 2.</p>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 3">
+            <h3>Tile 3</h3>
+            <hr>
+            <p>Description for Tile 3.</p>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 4">
+            <h3>Tile 4</h3>
+            <hr>
+            <p>Description for Tile 4.</p>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 5">
+            <h3>Tile 5</h3>
+            <hr>
+            <p>Description for Tile 5.</p>
+        </div>
+        <div class="tile">
+            <img src="https://via.placeholder.com/200" alt="Tile 6">
+            <h3>Tile 6</h3>
+            <hr>
+            <p>Description for Tile 6.</p>
+        </div>
+    </div>
+</body>
+</html>
