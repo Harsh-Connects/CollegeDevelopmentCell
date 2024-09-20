@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e9ecef; /* Light background */
+        }
+
+        .navbar {
+            background-color: #343a40; /* Dark background */
+            border-radius: 16px;
+            padding: 20px;
+            margin: 20px;
+            width: 200px; /* Fixed width for vertical menu */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            display: block;
+            font-size: 16px;
+            color: white;
+            padding: 14px;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #495057; /* Darker on hover */
+        }
+
+        .navbar a:active {
+            transform: scale(1.1); /* Zoom effect on click */
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff; /* White background */
+            min-width: 200px;
+            left: 100%;
+            top: 0;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .column {
+            padding: 10px;
+        }
+
+        .column h3 {
+            color: #343a40; /* Dark headings */
+            margin: 0 0 10px;
+        }
+
+        .column a {
+            color: #343a40; /* Dark text */
+            padding: 8px 0;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .column a:hover {
+            background-color: #f1f1f1; /* Light gray on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <div class="dropdown">
+        <a href="javascript:void(0);">Dropdown <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+            <div class="column">
+                <h3>Category 1</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+                <h3>Category 2</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <div class="column">
+                <h3>Category 3</h3>
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="padding: 20px;">
+    <h3>Vertical Menu Example</h3>
+    <p>Click on the links to see the zoom effect.</p>
+</div>
+
+</body>
+</html>
